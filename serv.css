@@ -1,0 +1,125 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins' sans-serif;
+}
+.container{
+    width: 100%;
+    padding: 0 8% ;
+    position: relative;
+    background-color: #191919;
+
+}
+nav{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 5px 0;
+}
+.logo{
+    width: 120px;
+    cursor: pointer;
+}
+.cart-icon{
+    width: 30px;
+    cursor: pointer;
+}
+nav ul{
+    flex: 1;
+    text-align: right;
+    padding-right: 30px;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 30px;
+}
+nav ul li a{
+    color: #fff;
+    text-decoration: none;
+    position: relative;
+}
+nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: red;
+    transition: width 0.3s;
+}
+nav ul li a:hover::after{
+    width: 50%;
+}
+
+.contain{
+    position: relative;
+    background: #040404;
+    width: 100%;
+    height: 100vh;
+    padding: 0 8%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+}
+.dev{
+    width: 25rem;
+    border: none;
+    height: 30rem;
+    display: flex;
+    flex-direction: column;
+    color: #f2f0f0;
+    border-radius: 30px;
+    background: #191919;
+}
+.den{
+    width: 25rem;
+    border: none;
+    height: 30rem; 
+    display: flex;
+    flex-direction: column;
+    color: #f2f0f0;
+    border-radius: 30px;
+    background: #191919;
+}
+.conatin hr{
+    margin: 10px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+.contain h1{
+   text-align: center;
+   margin: 10px;
+   color: #04eaea;
+   font-size: 50px;
+   font-weight: 600;
+   font-style: italic;
+}
+.contain p{
+    margin-left: 20px;
+    font-size: 20px;
+    letter-spacing: 2px;
+    color: #fff;
+}
+.contain img{
+    width: 120px;
+    height: 120px;
+    display: flex;
+    margin-left: 35%;
+    margin-top: 30px;
+    border-radius: 50%;
+}
+.contain h2{
+    color: #fff;
+    position: absolute;
+    right: 36%;
+    bottom: 580px;
+    font-size: 4rem;
+    letter-spacing: 2px;
+    
+}

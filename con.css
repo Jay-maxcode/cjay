@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins' sans-serif;
+    box-sizing: border-box;
+}
+.container{
+    width: 100%;
+    padding: 0 8% ;
+    position: relative;
+    background-color: #040404;
+
+}
+nav{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 5px 0;
+}
+.logo{
+    width: 120px;
+    cursor: pointer;
+}
+.cart-icon{
+    width: 30px;
+    cursor: pointer;
+}
+nav ul{
+    flex: 1;
+    text-align: right;
+    padding-right: 30px;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 30px;
+}
+nav ul li a{
+    color: #fff;
+    text-decoration: none;
+    position: relative;
+}
+nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: red;
+    transition: width 0.3s;
+}
+nav ul li a:hover::after{
+    width: 50%;
+}
+section{
+    padding: 40px 10%;
+}
+.contact{
+    display: flex;
+    gap: 2rem;
+    background: #040404;
+    width: 100%;
+    min-height: 100vh;
+    align-items: center;
+    height: 30rem;
+}
+img{
+    width: 35rem;
+    height: auto;
+    
+}
+.form{
+    height: 40rem;
+}
+span{
+    color: #f9004d;
+}
+.form h1{
+    font-size: 80px;
+    color: #fff;
+    margin-bottom: 15px;
+}
+.form p{
+    color: #c0bcbc;
+    letter-spacing: 1px;
+    line-height: 20px;
+    font-size: 12px;
+    margin-bottom: 14px;
+}
+.contact form{
+    position: relative;
+}
+.contact form input,
+form textarea{
+    width: 100%;
+    padding: 18px;
+    border: none;
+    outline: none;
+    background: #191919;
+    font-size: 1rem;
+    margin-bottom: 0.6rem;
+    border-radius: 10px;
+}
+.contact form .btn{
+    display: inline-block;
+    background-color: #f9004d;
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    width: 220px;
+    transition: ease .20s;
+    cursor: pointer;
+    color: #fff;
+}
+.contact form .btn:hover{
+    border: 2px solid #f9004d;
+    background: transparent;
+    transform: scale(1.1);
+}
